@@ -117,6 +117,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
+    align-content: center;
     border-radius: 8px;
     padding: 30px 10px 30px 10px;
     background-color: rgba(63, 63, 58, 0.3);
@@ -137,8 +138,12 @@
 }
 
 .forum p {
-    text-align: start;
+    text-align: center;
     font-size: 16px;
+}
+
+.forum:active {
+    
 }
 
 .join {
@@ -185,6 +190,45 @@
 .main-text p {
     font-size: 16px;
     color: aliceblue;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    background-color: black;
+}
+
+.partners > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    color: antiquewhite;
+    list-style-type: none;
+    gap: 8px;
+    padding: 30px;
+}
+
+.partners > hr {
+    width: 10%;
+    align-self: center;
+}
+
+.partners > ul > li {
+    font-size: 26px;
+    font-family: 'COCOGOOSE', sans-serif;
+}
+
+.partners > h3 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
