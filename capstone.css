@@ -1,0 +1,349 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+
+@font-face {
+    font-family: 'cocogoose';
+    src: url(fonts/cocogoose-pro.regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+@media screen and  (max-width: 768px) {
+    
+}
+
+.about-page {
+    display: none;
+}
+
+.home-page {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+
+}
+
+.header {
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 22px;
+    height: 90vh;
+}
+
+.header-para {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.header-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+    gap: 10px;
+}
+
+
+.home-hamburger {
+    font-size: 48px;
+}
+
+.header-one {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+                                                
+}
+
+.header-two {
+    font-size: 36px;
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+                                                
+}
+
+.header > p {
+    border-radius: 2px;
+    border-color: whitesmoke;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'COCOGOOSE', sans-serif;
+                                                
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    background-color: #272A31;
+    color: blanchedalmond;
+    padding: 60px 20px 60px 20px;
+    gap: 30px;
+}
+
+.program {
+    color: whitesmoke;
+    font-size: 36px;
+    text-align: center;
+}
+
+.forum{
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 30px 10px 30px 10px;
+    background-color: rgba(63, 63, 58, 0.3);
+    border: 3px solid #272A32;
+    color: white;
+    gap: 20px;
+}
+
+
+.forum > h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ec5242;
+}
+
+.forum i {
+    font-size: 35px;
+}
+
+.forum p {
+    text-align: start;
+    font-size: 16px;
+}
+
+.join {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #ec5242;
+    color: aliceblue;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.speaker  {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 30px 20px 30px 20px;
+    border-bottom: 2px solid lightgray;
+}
+
+.him {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.him h4 {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.him p {
+    font-size: 14px;
+    color: #ec5242;
+}
+
+.him hr {
+    width: 20%;
+}
+
+.main-text p {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #122A12;
+    padding: 20px;
+    color: wheat;
+}
+
+.about-page {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+}
+
+.about-hamburger {
+    font-size: 48px;
+}
+
+
+.about-page-header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 22px;
+    height: 90vh;
+}
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-past {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ about-past h3{
+     font-size: 24px;
+     text-align: center;
+
+ }
+
+ about-past p {
+    padding: 10px;
+    border: 1px solid white;
+ }
+
+ .header nav ul {
+     display: none;
+ }
+
+ .header .desk-nav{
+     display: none;
+ }
+
+@media screen and (min-width: 768px) {
+    * {
+    
+
+    }
+
+    .about-page {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 22px;
+        height: 90vh;
+
+    }
+
+    .home-hamburger {
+        display: none;
+    }
+    .header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 12px;
+        list-style-type: none;
+        color: white;
+        background-color: #122A12;
+        padding: 20px;
+    }
+
+    .header nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .header div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header div ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 16px;
+        list-style-type: none;
+    }
+
+    .header div ul li a {
+        color: black;
+    }
+
+    .header .header-headings {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        gap: 22px;
+    }
+
+    .header-one, .header-two {
+        font-family: 'COCOGOOSE', sans-serif;
+        color: #ec5242;
+                                                
+    }
+
+    .big-forum {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 8px;
+
+    }
+
+    .forum {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .speakers {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        gap: 12px;
+    }
+    
+} 
+
+
+
+
+
+
+
+
