@@ -331,7 +331,7 @@ body {
 }
 
 footer {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     background-color: #122A12;
@@ -347,10 +347,19 @@ footer {
      display: none;
  }
 
+ .partners {
+     display: none;
+ }
+
+
 @media screen and (min-width: 768px) {
     * {
     
 
+    }
+
+    .more {
+        display: none;
     }
 
     .about-page {
@@ -411,7 +420,6 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: url('mooc-images/bkgrnd.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -454,6 +462,51 @@ footer {
         grid-template-columns: auto auto;
         justify-content: space-around;
         gap: 12px;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 12px;
+        background-color: black;
+     }
+     .partners > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        color: antiquewhite;
+        list-style-type: none;
+        gap: 8px;
+        padding: 30px;
+        flex-wrap: wrap;
+     }
+     .partners > hr {
+        width: 10%;
+        align-self: center;
+     }
+     .partners > ul > li {
+        font-size: 22px;
+        font-family: 'COCOGOOSE', sans-serif;
+     }
+     .partners > h3 {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'COCOGOOSE', sans-serif;
+        color: antiquewhite;
+        text-align: center;
+        padding: 10px;
+     }
+
+     footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #122A12;
+        padding: 20px;
+        color: wheat;
     }
 
     
