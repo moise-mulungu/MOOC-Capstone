@@ -47,7 +47,7 @@ function generateSection() {
     <div class="him">
         <h4>${speakers[i].speakerName}</h4>
         <p><em>${speakers[i].speakerTitle}</em></p>
-        <hr>
+        
         <p><em>${speakers[i].aboutSpeaker}</em></p>
     </div>
 </div>`;

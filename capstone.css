@@ -10,8 +10,8 @@
 * {
     overflow-x: hidden;
 
+}
 
-  }
 body {
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background: url('mooc-images/bkgrnd.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -56,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 32px;
 }
 
@@ -64,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     font-size: 16px;
     border: 3px solid white;
     padding: 20px;
@@ -74,7 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .header-one {
@@ -119,7 +119,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     border-radius: 8px;
     padding: 30px 10px 30px 10px;
     background-color: rgba(63, 63, 58, 0.3);
@@ -164,7 +164,7 @@ body {
     gap: 20px;
     padding: 10px;
     margin: 30px 20px 30px 20px;
-    border-bottom: 2px solid lightgray;
+    /* border-bottom: 2px solid lightgray; */
     font-family: "Lato", sans-serif;
     flex-wrap: wrap;
 }
@@ -172,7 +172,9 @@ body {
 .him {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
+
 }
 
 .him h4 {
@@ -201,95 +203,11 @@ body {
     font-size: 22px;
 }
 
-.about-page {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    width: 100%;
-    
-}
-
-
-.about-page-header {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-content: center;
-    background: url('mooc-images/bkgrnd.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    gap: 22px;
-    height: 90vh;
-    padding: 0 24px 0 24px;
-}
-
-.about-page-header > P {
-    text-align: center;
-}
-
-.about-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 32px;
-
-}
-
-.about-one {
-    color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;        
-}
-
-.about-two {
-    font-size: 36px;
-    color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;        
-}
-
-
-.about-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
-    border: 1px solid black;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.about-logo > h3 {
-    font-size: 36px;
-}
-
-.about-past {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
-    padding-bottom: 64px;
- }
-
- about-past h3{
-     font-size: 24px;
-     text-align: center;
-
- }
-
- about-past p {
-    padding: 10px;
-    border: 1px solid white;
- }
-
- .header nav ul {
+.header nav ul {
      display: none;
  }
 
- .partners {
+.partners {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,9 +252,8 @@ footer {
     display: none;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #122A12;
+    background-color: #D3D3D3;
     padding: 20px;
-    color: wheat;
 }
 
 .hamburger {
@@ -351,6 +268,14 @@ footer {
      display: none;
  }
 
+ .home-nav {
+     display: none;
+ }
+
+ .main > a {
+     display: none;
+ }
+
 
 @media screen and (min-width: 768px) {
     * {
@@ -362,54 +287,64 @@ footer {
         display: none;
     }
 
-    .about-page {
+    .join {
         display: none;
     }
+
+    /* .about-page > .partners { */
+        /* display: none; */
+    /* } */
 
     .head {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 22px;
+        background: url('mooc-images/bkgrnd.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        gap: 22px;
         height: 90vh;
+        padding: 0 124px 0 124px;
 
     }
 
     .hamburger {
         display: none;
     }
-    .header nav ul {
+
+    .home-page .home-nav .list {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         gap: 12px;
         list-style-type: none;
         color: white;
-        background-color: #122A12;
-        padding: 20px;
+        background-color: #272A31;
+        padding: 30px;
+        margin-top: 0;
+        padding-left: 120px;
     }
 
-    .header nav ul li a {
+    .home-nav ul li a {
         text-decoration: none;
         color: white;
-    }
-
-    .header div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     .header div ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         gap: 16px;
         list-style-type: none;
+        background: url('mooc-images/bkgrnd.png');
+    }
+
+    .header div ul .call {
+        border: 2px solid red;
+        padding: 3px;
+        text-align: center;
     }
 
     .header div ul li a {
@@ -423,10 +358,17 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        padding: 0 124px 0 124px;
     }
 
     .header > .desk-nav > ul > li > a {
         text-decoration: none;
+    }
+
+    .header > .desk-nav > i {
+        color: green;
+        font-size: 46px;
+
     }
 
     .head .header-headings {
@@ -436,10 +378,10 @@ footer {
         gap: 22px;
     }
 
-    .header-one, .header-two {
-        font-family: 'COCOGOOSE', sans-serif;
+    .header-two {
+        font-family: 'COCOGOOSE', sans-serif;;
         color: #ec5242;
-                                                
+        font-size: 56px;
     }
 
     .big-forum {
@@ -470,8 +412,9 @@ footer {
         justify-content: center;
         align-content: center;
         gap: 12px;
-        background-color: black;
+        background-color: #272A31;
      }
+
      .partners > ul {
         display: flex;
         flex-direction: row;
@@ -483,14 +426,17 @@ footer {
         padding: 30px;
         flex-wrap: wrap;
      }
+
      .partners > hr {
         width: 10%;
         align-self: center;
      }
+
      .partners > ul > li {
         font-size: 22px;
         font-family: 'COCOGOOSE', sans-serif;
      }
+
      .partners > h3 {
         font-size: 30px;
         font-weight: bold;
@@ -498,18 +444,19 @@ footer {
         color: antiquewhite;
         text-align: center;
         padding: 10px;
-     }
-
+     } 
+    
      footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: #122A12;
+        background-color: #D3D3D3;
         padding: 20px;
-        color: wheat;
     }
-
     
+    footer > h3 {
+        color: green;
+    }
 } 
 
 

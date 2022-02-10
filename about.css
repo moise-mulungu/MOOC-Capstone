@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@font-face {
+    font-family: 'cocogoose';
+    src: url(fonts/cocogoose-pro.regular.ttf);
+  }
+
+* {
+    overflow-x: hidden;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .home-nav > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        list-style-type: none;
+        color: white;
+        background-color: #272A31;
+        padding: 30px;
+        margin-top: 0;
+        padding-left: 120px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+        list-style-type: none;
+        padding: 30px 124px 30px 124px;
+        text-align: center;
+    }
+
+    .header > a {
+        text-decoration: none;
+    }
+
+    .header > ul  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 36px;
+        list-style-type: none;  
+    }
+
+    .header > ul > li > a {
+        text-decoration: none;
+    }
+
+    .header > a i {
+        color: green;
+        font-size: 36px;
+    }
+    .about-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    
+    .about-page-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: url('mooc-images/bkgrnd.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 0 144px 0 144px;
+        height: 90vh;
+
+    }
+    /*  */
+    .about-page-header > P {
+        text-align: center;
+    }
+
+    .about-page-main {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .title {
+        color: tomato;
+        font-family: 'COCOGOOSE', sans-serif;
+        font-size: 36px;        
+    }
+    
+    .about-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .about-logo > h3 {
+        color: green;
+        font-size: 48px;
+    }
+    
+    .about-past {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        padding-bottom: 64px;
+     }
+    
+     about-past h3{
+         font-size: 24px;
+         text-align: center;
+    
+     }
+    
+     about-past p {
+        padding: 10px;
+        border: 1px solid white;
+     }
+
+
+     /* .about-page-header { */
+        /* display: grid; */
+        /* grid-template-columns: auto; */
+        /* justify-content: space-between; */
+        /* align-content: center; */
+        /* padding: 0 124px 0 124px; */
+    /* } */
+    .about-header {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .about-past {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-past > div {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 22px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #D3D3D3;
+        padding: 20px;
+        width: 100%;
+    }
+
+    footer > h3 i {
+        color: green;
+        font-size: 24px;
+    }
+    /*  */
+}
