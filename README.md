@@ -19,7 +19,7 @@ In this project, I worked created both Mobile and Desktop versions of my confere
 - JavaScript.
 
 ## Live Demo
-[link](file:///home/moise/MOOC-Capstone/index.html)
+[link](https://moise-mulungu.github.io/MOOC-Capstone/)
 
 ## Author
 

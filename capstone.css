@@ -8,10 +8,13 @@
   }
 
 * {
+    overflow-x: hidden;
+
+
+  }
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
 
 }
 
@@ -24,6 +27,14 @@
     grid-template-columns: auto;
     justify-content: center;
 
+}
+
+.header {
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 20px;
 }
 
 .head {
@@ -64,26 +75,17 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 10px;
-    gap: 10px;
-}
-
-
-.home-hamburger {
-    font-size: 48px;
 }
 
 .header-one {
     color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;
-                                                
+    font-family: 'COCOGOOSE', sans-serif;                                              
 }
 
 .header-two {
     font-size: 36px;
     color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;
-                                                
+    font-family: 'COCOGOOSE', sans-serif;                                             
 }
 
 .header > p {
@@ -126,7 +128,6 @@
     gap: 20px;
 }
 
-
 .forum > h3 {
     font-size: 22px;
     font-weight: bold;
@@ -142,7 +143,8 @@
     font-size: 16px;
 }
 
-.forum:active {
+.forum:hover {
+    border: 3px solid #ec5242;
     
 }
 
@@ -164,6 +166,7 @@
     margin: 30px 20px 30px 20px;
     border-bottom: 2px solid lightgray;
     font-family: "Lato", sans-serif;
+    flex-wrap: wrap;
 }
 
 .him {
@@ -178,8 +181,7 @@
 
 }
 
-.him p {
-    font-size: 14px;
+.speaker > .him > .p {
     color: #ec5242;
 }
 
@@ -192,7 +194,102 @@
     color: aliceblue;
 }
 
-.partners {
+.more {
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.about-page {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+.about-page-header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 22px;
+    height: 90vh;
+    padding: 0 24px 0 24px;
+}
+
+.about-page-header > P {
+    text-align: center;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+
+}
+
+.about-one {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;        
+}
+
+.about-two {
+    font-size: 36px;
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;        
+}
+
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.about-logo > h3 {
+    font-size: 36px;
+}
+
+.about-past {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 64px;
+ }
+
+ about-past h3{
+     font-size: 24px;
+     text-align: center;
+
+ }
+
+ about-past p {
+    padding: 10px;
+    border: 1px solid white;
+ }
+
+ .header nav ul {
+     display: none;
+ }
+
+ .partners {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,6 +307,7 @@
     list-style-type: none;
     gap: 8px;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 .partners > hr {
@@ -218,17 +316,18 @@
 }
 
 .partners > ul > li {
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'COCOGOOSE', sans-serif;
 }
 
 .partners > h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'COCOGOOSE', sans-serif;
     color: antiquewhite;
     text-align: center;
     padding: 10px;
+
 }
 
 footer {
@@ -243,56 +342,6 @@ footer {
 .hamburger {
     font-size: 36px;
 }
-
-.about-page {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-}
-
-
-.about-page-header {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    background: url('mooc-images/bkgrnd.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    gap: 22px;
-    height: 90vh;
-}
-
-.about-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.about-past {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
- }
-
- about-past h3{
-     font-size: 24px;
-     text-align: center;
-
- }
-
- about-past p {
-    padding: 10px;
-    border: 1px solid white;
- }
-
- .header nav ul {
-     display: none;
- }
 
  .header .desk-nav{
      display: none;
@@ -321,7 +370,7 @@ footer {
 
     }
 
-    .home-hamburger {
+    .hamburger {
         display: none;
     }
     .header nav ul {
@@ -358,6 +407,20 @@ footer {
         color: black;
     }
 
+    .header > .desk-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: url('mooc-images/bkgrnd.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header > .desk-nav > ul > li > a {
+        text-decoration: none;
+    }
+
     .head .header-headings {
         display: grid;
         grid-template-columns: auto;
@@ -392,6 +455,7 @@ footer {
         justify-content: space-around;
         gap: 12px;
     }
+
     
 } 
 
