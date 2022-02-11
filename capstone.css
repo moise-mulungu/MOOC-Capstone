@@ -30,15 +30,6 @@ body {
     background-color: #d3d3d3;
   }
 
-  .time {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 16px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
   .main > a {
     display: none;
   }
@@ -54,28 +45,14 @@ body {
 
   .partners > ul > li {
     font-size: 22px;
-    font-family: 'COCOGOOSE', sans-serif;
-  }
-
-  .time > .icon-left > li:hover {
-    color: greenyellow;
-  }
-
-  .icon-left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 16px;
-    list-style-type: none;
+    font-family: "Lato", sans-serif;
   }
 
   .cancel {
     text-align: end;
+    padding: 20px;
+    font-size: 32px;
     margin-right: 30px;
-  }
-
-  .cancel:hover {
-    color: #f00;
   }
 
   .home-page {
@@ -120,8 +97,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    border: 3px solid white;
+    border: 3px solid #d3d3d3;
     padding: 20px;
+    font-family: "Lato", sans-serif;;
   }
 
   .header-cont {
@@ -129,6 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Lato", sans-serif;;
   }
 
   .header-one {
@@ -144,7 +123,7 @@ body {
 
   .header > p {
     border-radius: 2px;
-    border-color: whitesmoke;
+    border-color: #d3d3d3;
     padding: 10px;
     margin: 20px;
     font-family: 'COCOGOOSE', sans-serif;
@@ -155,13 +134,13 @@ body {
     grid-template-columns: auto;
     justify-content: space-between;
     background-color: #272a31;
-    color: blanchedalmond;
+    color: #d3d3d3;
     padding: 60px 20px 60px 20px;
     gap: 30px;
   }
 
   .program {
-    color: whitesmoke;
+    color: #d3d3d3;
     font-size: 36px;
     text-align: center;
   }
@@ -177,7 +156,7 @@ body {
     padding: 30px 10px 30px 10px;
     background-color: rgba(63, 63, 58, 0.3);
     border: 3px solid #272a32;
-    color: white;
+    color: #d3d3d3;
     gap: 20px;
   }
 
@@ -205,7 +184,7 @@ body {
     text-align: center;
     font-size: 24px;
     background-color: #ec5242;
-    color: aliceblue;
+    color: #d3d3d3;
     border-radius: 5px;
     border: transparent;
   }
@@ -242,7 +221,7 @@ body {
 
   .main-text p {
     font-size: 16px;
-    color: aliceblue;
+    color: #d3d3d3;
   }
 
   .more {
@@ -257,11 +236,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    color: antiquewhite;
+    color: #d3d3d3;
     list-style-type: none;
     gap: 8px;
     padding: 30px;
     flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
   }
 
   .header nav ul {
@@ -285,8 +265,8 @@ body {
   .partners > h3 {
     font-size: 30px;
     font-weight: bold;
-    font-family: 'COCOGOOSE', sans-serif;
-    color: antiquewhite;
+    font-family: "Lato", sans-serif;
+    color: #d3d3d3;
     text-align: center;
     padding: 10px;
   }
@@ -310,6 +290,7 @@ body {
   .home-nav {
     display: none;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -353,8 +334,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    border: 3px solid white;
+    border: 3px solid #d3d3d3;
     padding: 20px;
+    font-family: ;
   }
 
   .header-cont {
@@ -377,7 +359,7 @@ body {
 
   .header > p {
     border-radius: 2px;
-    border-color: whitesmoke;
+    border-color: #d3d3d3;
     padding: 10px;
     margin: 20px;
     font-family: 'COCOGOOSE', sans-serif;
@@ -392,30 +374,29 @@ body {
     grid-template-columns: auto;
     justify-content: space-between;
     background-color: #272a31;
-    color: blanchedalmond;
+    color: #d3d3d3;
     padding: 60px 20px 60px 20px;
     gap: 30px;
+    font-family: "Lato", sans-serif;
   }
 
-  .home-page .home-nav {
+  .main > p {
+    text-align: center;
+  }
+
+
+  .home-nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 12px;
-    list-style-type: none;
-    color: white;
-    background-color: #272a31;
-  }
-
-  .home-nav > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
     gap: 22px;
-    padding-left: 164px;
+    list-style-type: none;
+    color: #d3d3d3;
+    background-color: #272a31;
     width: 100%;
-  }
+    padding: 20px 20px 20px 182px;
+    margin: 0;
+ }
 
   .speaker {
     display: grid;
@@ -429,7 +410,7 @@ body {
 
   .home-nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #d3d3d3;
   }
 
   .forum {
@@ -443,12 +424,12 @@ body {
     padding: 30px 10px 30px 10px;
     background-color: rgba(63, 63, 58, 0.3);
     border: 3px solid #272a32;
-    color: white;
+    color: #d3d3d3;
     gap: 20px;
   }
 
   .program {
-    color: whitesmoke;
+    color: #d3d3d3;
     font-size: 36px;
     text-align: center;
   }
@@ -481,7 +462,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    color: antiquewhite;
+    color: #d3d3d3;
     list-style-type: none;
     gap: 8px;
     padding: 30px;
@@ -515,7 +496,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0 124px 0 124px;
+    padding: 20px 124px 20px 124px;
   }
 
   .header > .desk-nav > ul > li > a {
@@ -533,16 +514,6 @@ body {
     justify-content: space-between;
     gap: 22px;
   }
-
-  /* header-two { */
-
-  /* font-family: 'COCOGOOSE', sans-serif; */
-
-  /* color: #ec5242; */
-
-  /* font-size: 56px; */
-
-  /* } */
 
   .big-forum {
     display: grid;
@@ -594,14 +565,14 @@ body {
 
   .partners > ul > li {
     font-size: 22px;
-    font-family: 'COCOGOOSE', sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
   .partners > h3 {
     font-size: 30px;
     font-weight: bold;
-    font-family: 'COCOGOOSE', sans-serif;
-    color: antiquewhite;
+    font-family: "Lato", sans-serif;
+    color: #d3d3d3;
     text-align: center;
     padding: 10px;
   }

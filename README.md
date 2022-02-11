@@ -1,5 +1,8 @@
-# MOOC-Capstone
-My first Capstone project
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# MOOC-Capstone 
+
+My first Capstone project for Web Development
 
 ![](file:///home/moise/MOOC-Capstone/index.html)
 
@@ -17,11 +20,14 @@ In this project, I worked created both Mobile and Desktop versions of my confere
 - CSS (grid, flexbox)
 - Visual Studio Code.
 - JavaScript.
+- Linters
 
 ## Live Demo
+
 [link](https://moise-mulungu.github.io/MOOC-Capstone/)
 
-## Loom links (https://www.loom.com/share/433b2515825d476586b8a08e1b22c9a7)
+## To watch this project presentation:
+[link] (https://www.loom.com/share/5a03bf3735b4459db48f3c9eff7ce9b9)
 
 ## Author
 
@@ -31,10 +37,23 @@ In this project, I worked created both Mobile and Desktop versions of my confere
 - Twitter: [Moise Mulungu](https://twitter.com/moise_mulungu)
 - LinkedIn: [Moise Mulungu](https://www.linkedin.com/in/mo%C3%AFse-mulungu-a939831b2/)
 
+## Design 
+
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07) 
+- [Design Guideline](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/moise-mulungu/MOOC-Capstone/issues).
+
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

@@ -15,8 +15,11 @@ body {
   padding: 0;
 }
 
-.home-nav,
 .header {
+  display: none;
+}
+
+.home-nav ul{
   display: none;
 }
 
@@ -65,7 +68,7 @@ body {
 }
 
 .para {
-  background: #eeee;
+  background: #d3d3d3;
   padding: 48px;
   text-align: start;
   border-radius: 2px;
@@ -87,8 +90,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* gap: 22px; */
   text-align: center;
   border-bottom: 1px solid #d3d3d3;
   padding-bottom: 34px;
@@ -127,7 +128,7 @@ footer > h3 i {
 
 .about-past p {
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #d3d3d3;
 }
 
 .about-header {
@@ -160,7 +161,7 @@ footer > h3 i {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  color: antiquewhite;
+  color: #d3d3d3;
   list-style-type: none;
   gap: 8px;
   padding: 30px;
@@ -181,7 +182,7 @@ footer > h3 i {
   font-size: 30px;
   font-weight: bold;
   font-family: 'COCOGOOSE', sans-serif;
-  color: antiquewhite;
+  color: #d3d3d3;
   text-align: center;
 }
 
@@ -209,10 +210,11 @@ footer {
     justify-content: flex-end;
     gap: 12px;
     list-style-type: none;
-    color: white;
+    color: #d3d3d3;
     background-color: #272a31;
     padding: 20px;
     padding-right: 130px;
+    margin: 0;
   }
 
   .header > a {
@@ -293,14 +295,16 @@ footer {
   }
 
   .para {
-    background: #eeee;
+    background-color: #eeee;
     padding: 48px;
     text-align: start;
     border-radius: 2px;
+    font-family: "Lato", sans-serif;
   }
 
   .about-page p {
     text-align: center;
+    font-family: "Lato", sans-serif;
   }
 
   .about-page-main {
@@ -330,6 +334,7 @@ footer {
   .about-logo > h3 {
     text-align: start;
     font-size: 26px;
+    font-family: "Lato", sans-serif;
   }
 
   .about-past {
@@ -343,11 +348,7 @@ footer {
   .about-past > h3 {
     font-size: 24px;
     text-align: center;
-  }
-
-  .about-past p {
-    padding: 10px;
-    border: 1px solid white;
+    border-bottom: none;
   }
 
   .about-header {
