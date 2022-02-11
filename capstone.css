@@ -99,7 +99,7 @@ body {
     font-size: 16px;
     border: 3px solid #d3d3d3;
     padding: 20px;
-    font-family: "Lato", sans-serif;;
+    font-family: "Lato", sans-serif;
   }
 
   .header-cont {
@@ -107,7 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Lato", sans-serif;;
+    font-family: "Lato", sans-serif;
   }
 
   .header-one {
@@ -290,7 +290,6 @@ body {
   .home-nav {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -336,7 +335,7 @@ body {
     font-size: 16px;
     border: 3px solid #d3d3d3;
     padding: 20px;
-    font-family: ;
+    font-family: "Lato", sans-serif;
   }
 
   .header-cont {
@@ -384,8 +383,7 @@ body {
     text-align: center;
   }
 
-
-  .home-nav ul{
+  .home-nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -396,7 +394,7 @@ body {
     width: 100%;
     padding: 20px 20px 20px 182px;
     margin: 0;
- }
+  }
 
   .speaker {
     display: grid;
