@@ -15,7 +15,7 @@ body {
   padding: 0;
 }
 
-@media screen and  (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mobile-menu {
     display: none;
     flex-direction: column;
@@ -216,8 +216,6 @@ body {
     gap: 20px;
     padding: 10px;
     margin: 30px 20px 30px 20px;
-
-    /* border-bottom: 2px solid lightgray; */
     font-family: "Lato", sans-serif;
     flex-wrap: wrap;
   }
@@ -312,188 +310,307 @@ body {
   .home-nav {
     display: none;
   }
+}
 
-  @media screen and (min-width: 768px) {
-    .mobile-menu {
-      display: none;
-    }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 
-    .more {
-      display: none;
-    }
+  .more {
+    display: none;
+  }
 
-    .join {
-      display: none;
-    }
+  .join {
+    display: none;
+  }
 
-    .head {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 22px;
-      background: url('mooc-images/bkgrnd.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 90vh;
-      padding: 0 124px 0 124px;
-    }
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    padding: 0 124px 0 124px;
+  }
 
-    .hamburger {
-      display: none;
-    }
+  .header-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
 
-    .home-page .home-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 12px;
-      list-style-type: none;
-      color: white;
-      background-color: #272a31;
-    }
+  .header-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 3px solid white;
+    padding: 20px;
+  }
 
-    .home-nav > ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 22px;
-      padding-left: 164px;
-      width: 100%;
-    }
+  .header-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .home-nav ul li a {
-      text-decoration: none;
-      color: white;
-    }
+  .header-one {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-    .partners > ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-content: center;
-      color: antiquewhite;
-      list-style-type: none;
-      gap: 8px;
-      padding: 30px;
-      flex-wrap: wrap;
-    }
+  .header-two {
+    font-size: 36px;
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-    .header div ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 16px;
-      list-style-type: none;
-      background: url('mooc-images/bkgrnd.png');
-    }
+  .header > p {
+    border-radius: 2px;
+    border-color: whitesmoke;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-    .header div ul .call {
-      border: 2px solid red;
-      padding: 3px;
-      text-align: center;
-    }
+  .hamburger {
+    display: none;
+  }
 
-    .header div ul li a {
-      color: black;
-    }
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    background-color: #272a31;
+    color: blanchedalmond;
+    padding: 60px 20px 60px 20px;
+    gap: 30px;
+  }
 
-    .header > .desk-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding: 0 124px 0 124px;
-    }
+  .home-page .home-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    list-style-type: none;
+    color: white;
+    background-color: #272a31;
+  }
 
-    .header > .desk-nav > ul > li > a {
-      text-decoration: none;
-    }
+  .home-nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 22px;
+    padding-left: 164px;
+    width: 100%;
+  }
 
-    .header > .desk-nav > i {
-      color: green;
-      font-size: 46px;
-    }
+  .speaker {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 30px 20px 30px 20px;
+    font-family: "Lato", sans-serif;
+    flex-wrap: wrap;
+  }
 
-    .head .header-headings {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: space-between;
-      gap: 22px;
-    }
+  .home-nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
 
-    .header-two {
-      font-family: 'COCOGOOSE', sans-serif;
-      color: #ec5242;
-      font-size: 56px;
-    }
+  .forum {
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px 10px 30px 10px;
+    background-color: rgba(63, 63, 58, 0.3);
+    border: 3px solid #272a32;
+    color: white;
+    gap: 20px;
+  }
 
-    .big-forum {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      gap: 8px;
-    }
+  .program {
+    color: whitesmoke;
+    font-size: 36px;
+    text-align: center;
+  }
 
-    .big-forum > p {
-      align-self: center;
-    }
+  footer > h3 {
+    color: green;
+  }
 
-    .forum {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
-      text-align: center;
-    }
+  .forum > h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ec5242;
+  }
 
-    .speakers {
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-content: space-around;
-      gap: 12px;
-    }
+  .forum i {
+    font-size: 35px;
+  }
 
-    .partners {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      gap: 12px;
-      background-color: #272a31;
-    }
+  .forum p {
+    text-align: center;
+    font-size: 16px;
+  }
 
-    .partners > hr {
-      width: 10%;
-      align-self: center;
-    }
+  .forum:hover {
+    border: 3px solid #ec5242;
+  }
 
-    .partners > ul > li {
-      font-size: 22px;
-      font-family: 'COCOGOOSE', sans-serif;
-    }
+  .partners > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    color: antiquewhite;
+    list-style-type: none;
+    gap: 8px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
 
-    footer > h3 {
-      color: green;
-    }
+  .header div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    list-style-type: none;
+    background: url('mooc-images/bkgrnd.png');
+  }
 
-    .partners > h3 {
-      font-size: 30px;
-      font-weight: bold;
-      font-family: 'COCOGOOSE', sans-serif;
-      color: antiquewhite;
-      text-align: center;
-      padding: 10px;
-    }
+  .header div ul .call {
+    border: 2px solid red;
+    padding: 3px;
+    text-align: center;
+  }
 
-    footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      background-color: #d3d3d3;
-      padding: 20px;
-    }
+  .header div ul li a {
+    color: black;
+  }
+
+  .header > .desk-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 124px 0 124px;
+  }
+
+  .header > .desk-nav > ul > li > a {
+    text-decoration: none;
+  }
+
+  .header > .desk-nav > i {
+    color: green;
+    font-size: 46px;
+  }
+
+  .head .header-headings {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    gap: 22px;
+  }
+
+  /* header-two { */
+
+  /* font-family: 'COCOGOOSE', sans-serif; */
+
+  /* color: #ec5242; */
+
+  /* font-size: 56px; */
+
+  /* } */
+
+  .big-forum {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 12px;
+  }
+
+  .him {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .him h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .p {
+    color: #ec5242;
+  }
+
+  .him hr {
+    width: 20%;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    background-color: #272a31;
+  }
+
+  .partners > hr {
+    width: 10%;
+    align-self: center;
+  }
+
+  .partners > ul > li {
+    font-size: 22px;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  .partners > h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #d3d3d3;
+    padding: 20px;
   }
 }
