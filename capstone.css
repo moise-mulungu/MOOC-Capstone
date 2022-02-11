@@ -1,28 +1,22 @@
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-
 @font-face {
-    font-family: 'cocogoose';
-    src: url(fonts/cocogoose-pro.regular.ttf);
-  }
+  font-family: 'cocogoose';
+  src: url(fonts/cocogoose-pro.regular.ttf);
+}
 
 * {
-    overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and  (max-width: 768px) {
-    
-}
-
-.mobile-menu {
+  .mobile-menu {
     display: none;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,9 +27,9 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
   }
-  
+
   .time {
     display: flex;
     flex-direction: row;
@@ -45,19 +39,28 @@ body {
     margin-right: 30px;
   }
 
-  .menu-list > li > .box > a {
-      font-size: 32px;
-      text-decoration: none;
+  .main > a {
+    display: none;
   }
-  
+
+  .menu-list > li > .box > a {
+    font-size: 32px;
+    text-decoration: none;
+  }
+
   .contacts > li {
     list-style-type: none;
   }
-  
+
+  .partners > ul > li {
+    font-size: 22px;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
   .time > .icon-left > li:hover {
     color: greenyellow;
   }
-  
+
   .icon-left {
     display: flex;
     flex-direction: row;
@@ -65,34 +68,31 @@ body {
     gap: 16px;
     list-style-type: none;
   }
-  
+
   .cancel {
     text-align: end;
     margin-right: 30px;
   }
-  
+
   .cancel:hover {
     color: #f00;
   }
-  
 
-.home-page {
+  .home-page {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+  }
 
-}
-
-.header {
+  .header {
     background: url('mooc-images/bkgrnd.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     padding: 20px;
-}
+  }
 
-.head {
-
+  .head {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -104,17 +104,17 @@ body {
     padding: 0 24px 0 24px;
     gap: 22px;
     height: 90vh;
-}
+  }
 
-.header-headings {
+  .header-headings {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-}
+  }
 
-.header-para {
+  .header-para {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,52 +122,51 @@ body {
     font-size: 16px;
     border: 3px solid white;
     padding: 20px;
-}
+  }
 
-.header-cont {
+  .header-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.header-one {
+  .header-one {
     color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;                                              
-}
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-.header-two {
+  .header-two {
     font-size: 36px;
     color: tomato;
-    font-family: 'COCOGOOSE', sans-serif;                                             
-}
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
-.header > p {
+  .header > p {
     border-radius: 2px;
     border-color: whitesmoke;
     padding: 10px;
     margin: 20px;
     font-family: 'COCOGOOSE', sans-serif;
-                                                
-}
+  }
 
-.main {
+  .main {
     display: grid;
     grid-template-columns: auto;
     justify-content: space-between;
-    background-color: #272A31;
+    background-color: #272a31;
     color: blanchedalmond;
     padding: 60px 20px 60px 20px;
     gap: 30px;
-}
+  }
 
-.program {
+  .program {
     color: whitesmoke;
     font-size: 36px;
     text-align: center;
-}
+  }
 
-.forum{
+  .forum {
     margin: 0 auto;
     width: 95%;
     display: grid;
@@ -177,32 +176,31 @@ body {
     border-radius: 8px;
     padding: 30px 10px 30px 10px;
     background-color: rgba(63, 63, 58, 0.3);
-    border: 3px solid #272A32;
+    border: 3px solid #272a32;
     color: white;
     gap: 20px;
-}
+  }
 
-.forum > h3 {
+  .forum > h3 {
     font-size: 22px;
     font-weight: bold;
     color: #ec5242;
-}
+  }
 
-.forum i {
+  .forum i {
     font-size: 35px;
-}
+  }
 
-.forum p {
+  .forum p {
     text-align: center;
     font-size: 16px;
-}
+  }
 
-.forum:hover {
+  .forum:hover {
     border: 3px solid #ec5242;
-    
-}
+  }
 
-.join {
+  .join {
     padding: 20px;
     text-align: center;
     font-size: 24px;
@@ -210,67 +208,53 @@ body {
     color: aliceblue;
     border-radius: 5px;
     border: transparent;
-}
+  }
 
-.speaker  {
+  .speaker {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
     padding: 10px;
     margin: 30px 20px 30px 20px;
+
     /* border-bottom: 2px solid lightgray; */
     font-family: "Lato", sans-serif;
     flex-wrap: wrap;
-}
+  }
 
-.him {
+  .him {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+  }
 
-}
-
-.him h4 {
+  .him h4 {
     font-size: 22px;
     font-weight: bold;
+  }
 
-}
-
-.p {
+  .p {
     color: #ec5242;
-}
+  }
 
-.him hr {
+  .him hr {
     width: 20%;
-}
+  }
 
-.main-text p {
+  .main-text p {
     font-size: 16px;
     color: aliceblue;
-}
+  }
 
-.more {
+  .more {
     border: 1px solid black;
     border-radius: 3px;
     text-align: center;
     font-size: 22px;
-}
+  }
 
-.header nav ul {
-     display: none;
- }
-
-.partners {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 12px;
-    background-color: black;
-}
-
-.partners > ul {
+  .partners > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -280,257 +264,236 @@ body {
     gap: 8px;
     padding: 30px;
     flex-wrap: wrap;
-}
+  }
 
-.partners > hr {
+  .header nav ul {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    background-color: black;
+  }
+
+  .partners > hr {
     width: 10%;
     align-self: flex-start;
-}
+  }
 
-.partners > ul > li {
-    font-size: 22px;
-    font-family: 'COCOGOOSE', sans-serif;
-}
-
-.partners > h3 {
+  .partners > h3 {
     font-size: 30px;
     font-weight: bold;
     font-family: 'COCOGOOSE', sans-serif;
     color: antiquewhite;
     text-align: center;
     padding: 10px;
+  }
 
-}
-
-footer {
+  footer {
     display: none;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     padding: 20px;
-}
+  }
 
-.hamburger {
+  .hamburger {
     font-size: 36px;
-}
+  }
 
- .header .desk-nav{
-     display: none;
- }
+  .header .desk-nav {
+    display: none;
+  }
 
- .partners {
-     display: none;
- }
+  .home-nav {
+    display: none;
+  }
 
- .home-nav {
-     display: none;
- }
-
- .main > a {
-     display: none;
- }
-
-
-@media screen and (min-width: 768px) {
-    * {
-    
-
-    }
-
+  @media screen and (min-width: 768px) {
     .mobile-menu {
-        display: none;
+      display: none;
     }
 
     .more {
-        display: none;
+      display: none;
     }
 
     .join {
-        display: none;
+      display: none;
     }
 
     .head {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 22px;
-        background: url('mooc-images/bkgrnd.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 90vh;
-        padding: 0 124px 0 124px;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      background: url('mooc-images/bkgrnd.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 90vh;
+      padding: 0 124px 0 124px;
     }
 
     .hamburger {
-        display: none;
+      display: none;
     }
 
     .home-page .home-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 12px;
-        list-style-type: none;
-        color: white;
-        background-color: #272A31;
-        /* padding: 30px; */
-        /* margin-top: 0; */
-        /* padding-left: 120px; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      list-style-type: none;
+      color: white;
+      background-color: #272a31;
     }
 
     .home-nav > ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 22px;
-        padding-left: 164px;
-        width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 22px;
+      padding-left: 164px;
+      width: 100%;
     }
 
     .home-nav ul li a {
-        text-decoration: none;
-        color: white;
+      text-decoration: none;
+      color: white;
+    }
+
+    .partners > ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      color: antiquewhite;
+      list-style-type: none;
+      gap: 8px;
+      padding: 30px;
+      flex-wrap: wrap;
     }
 
     .header div ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 16px;
-        list-style-type: none;
-        background: url('mooc-images/bkgrnd.png');
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 16px;
+      list-style-type: none;
+      background: url('mooc-images/bkgrnd.png');
     }
 
     .header div ul .call {
-        border: 2px solid red;
-        padding: 3px;
-        text-align: center;
+      border: 2px solid red;
+      padding: 3px;
+      text-align: center;
     }
 
     .header div ul li a {
-        color: black;
+      color: black;
     }
 
     .header > .desk-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 0 124px 0 124px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0 124px 0 124px;
     }
 
     .header > .desk-nav > ul > li > a {
-        text-decoration: none;
+      text-decoration: none;
     }
 
     .header > .desk-nav > i {
-        color: green;
-        font-size: 46px;
-
+      color: green;
+      font-size: 46px;
     }
 
     .head .header-headings {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        gap: 22px;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-between;
+      gap: 22px;
     }
 
     .header-two {
-        font-family: 'COCOGOOSE', sans-serif;;
-        color: #ec5242;
-        font-size: 56px;
+      font-family: 'COCOGOOSE', sans-serif;
+      color: #ec5242;
+      font-size: 56px;
     }
 
     .big-forum {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        gap: 8px;
-
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      gap: 8px;
     }
 
     .big-forum > p {
-        align-self: center;
+      align-self: center;
     }
 
     .forum {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        text-align: center;
-
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      text-align: center;
     }
 
     .speakers {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-around;
-        gap: 12px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+      gap: 12px;
     }
 
     .partners {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        gap: 12px;
-        background-color: #272A31;
-     }
-
-     .partners > ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-        color: antiquewhite;
-        list-style-type: none;
-        gap: 8px;
-        padding: 30px;
-        flex-wrap: wrap;
-     }
-
-     .partners > hr {
-        width: 10%;
-        align-self: center;
-     }
-
-     .partners > ul > li {
-        font-size: 22px;
-        font-family: 'COCOGOOSE', sans-serif;
-     }
-
-     .partners > h3 {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'COCOGOOSE', sans-serif;
-        color: antiquewhite;
-        text-align: center;
-        padding: 10px;
-     } 
-    
-     footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #D3D3D3;
-        padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 12px;
+      background-color: #272a31;
     }
-    
+
+    .partners > hr {
+      width: 10%;
+      align-self: center;
+    }
+
+    .partners > ul > li {
+      font-size: 22px;
+      font-family: 'COCOGOOSE', sans-serif;
+    }
+
     footer > h3 {
-        color: green;
+      color: green;
     }
-} 
 
+    .partners > h3 {
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'COCOGOOSE', sans-serif;
+      color: antiquewhite;
+      text-align: center;
+      padding: 10px;
+    }
 
-
-
-
-
-
-
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #d3d3d3;
+      padding: 20px;
+    }
+  }
+}
