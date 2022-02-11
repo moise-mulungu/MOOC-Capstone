@@ -7,7 +7,7 @@ My first Capstone project
 
 > This is capstone project on which I used all basic HTML, CSS A\and JavaScript knowledge.
 
-![screenshot](./menu.png)
+![screenshot](mooc-images/screenshot.png)
 
 In this project, I worked created both Mobile and Desktop versions of my conference page.
 
@@ -20,6 +20,8 @@ In this project, I worked created both Mobile and Desktop versions of my confere
 
 ## Live Demo
 [link](https://moise-mulungu.github.io/MOOC-Capstone/)
+
+## Loom links (https://www.loom.com/share/433b2515825d476586b8a08e1b22c9a7)
 
 ## Author
 
