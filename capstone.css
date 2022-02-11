@@ -22,6 +22,60 @@ body {
     
 }
 
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #D3D3D3;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .menu-list > li > .box > a {
+      font-size: 32px;
+      text-decoration: none;
+  }
+  
+  .contacts > li {
+    list-style-type: none;
+  }
+  
+  .time > .icon-left > li:hover {
+    color: greenyellow;
+  }
+  
+  .icon-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+    list-style-type: none;
+  }
+  
+  .cancel {
+    text-align: end;
+    margin-right: 30px;
+  }
+  
+  .cancel:hover {
+    color: #f00;
+  }
+  
+
 .home-page {
     display: grid;
     grid-template-columns: auto;
@@ -56,7 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
 }
 
@@ -183,7 +237,7 @@ body {
 
 }
 
-.speaker > .him > .p {
+.p {
     color: #ec5242;
 }
 
@@ -230,7 +284,7 @@ body {
 
 .partners > hr {
     width: 10%;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .partners > ul > li {
@@ -283,6 +337,10 @@ footer {
 
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     .more {
         display: none;
     }
@@ -310,7 +368,7 @@ footer {
         display: none;
     }
 
-    .home-page .home-nav .list {
+    .home-page .home-nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -318,9 +376,19 @@ footer {
         list-style-type: none;
         color: white;
         background-color: #272A31;
-        padding: 30px;
-        margin-top: 0;
-        padding-left: 120px;
+        /* padding: 30px; */
+        /* margin-top: 0; */
+        /* padding-left: 120px; */
+    }
+
+    .home-nav > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 22px;
+        padding-left: 164px;
+        width: 100%;
     }
 
     .home-nav ul li a {
@@ -385,6 +453,10 @@ footer {
         grid-template-columns: auto auto auto auto auto;
         gap: 8px;
 
+    }
+
+    .big-forum > p {
+        align-self: center;
     }
 
     .forum {

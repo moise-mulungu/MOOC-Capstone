@@ -19,9 +19,13 @@ body {
     display: none;
 }
 
+.hamb {
+    background: url('mooc-images/bkgrnd.png');
+    padding: 24px 24px 10px 24px;
+}
+
 .hamburger {
     font-size: 42px;
-    background: url('mooc-images/bkgrnd.png');
 }
 
 .about-page {
@@ -51,6 +55,13 @@ body {
     color: tomato;
     font-family: 'COCOGOOSE', sans-serif;
     font-size: 36px;        
+}
+
+.title2 {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 24px;
+    text-align: start;        
 }
 
 .para {
@@ -133,6 +144,7 @@ body {
     align-content: center;
     gap: 12px;
     background-color: #272A31;
+    padding-bottom: 0;
  }
  .partners > ul {
     display: flex;
@@ -177,7 +189,7 @@ footer > h3 i {
 
 @media screen and (min-width: 768px) {
 
-    .hamburger {
+    .hamb {
         display: none;  
     }
 
@@ -206,9 +218,11 @@ footer > h3 i {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        background: url('mooc-images/bkgrnd.png');
         gap: 16px;
         list-style-type: none;
-        padding: 0 124px 0 124px;
+        padding: 30px 124px 30px 124px;
         text-align: center;
     }
 

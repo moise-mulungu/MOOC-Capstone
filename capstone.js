@@ -46,8 +46,8 @@ function generateSection() {
     <img src="${speakers[i].speakerImg}" alt="The first speaker ">
     <div class="him">
         <h4>${speakers[i].speakerName}</h4>
+        <hr>
         <p><em>${speakers[i].speakerTitle}</em></p>
-        
         <p><em>${speakers[i].aboutSpeaker}</em></p>
     </div>
 </div>`;
