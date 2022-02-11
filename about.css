@@ -15,19 +15,191 @@ body {
     padding: 0;
 }
 
+.home-nav, .header {
+    display: none;
+}
+
+.hamburger {
+    font-size: 42px;
+    background: url('mooc-images/bkgrnd.png');
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    
+}
+
+.about-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 48px 144px 46px 144px;
+    height: 70vh;
+}
+
+.title {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 36px;        
+}
+
+.para {
+    background: #eeee;
+    padding: 48px;
+    text-align: start;
+    border-radius: 2px;
+}
+.about-page p {
+    text-align: center;
+}
+.about-page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 22px; */
+    text-align: center;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 34px;
+    width: 100%;
+    
+}
+.about-logo > h3 {
+    text-align: start;
+    font-size: 26px;
+}
+    
+.about-logo > i {
+    border: 1px solid #D3D3D3;
+    color: green;
+    font-size: 48px;
+    padding: 40px;
+}
+    
+.about-past {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+ }
+    
+ .about-past > h3 {
+     font-size: 24px;
+     text-align: center;
+    
+ }
+    
+ .about-past p {
+    padding: 10px;
+    border: 1px solid white;
+ }
+.about-header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+    
+.about-past > div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 22px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    background-color: #272A31;
+ }
+ .partners > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    color: antiquewhite;
+    list-style-type: none;
+    gap: 8px;
+    padding: 30px;
+    flex-wrap: wrap;
+ }
+ .partners > hr {
+    width: 10%;
+    align-self: center;
+ }
+ .partners > ul > li {
+    font-size: 16px;
+    font-family: 'COCOGOOSE', sans-serif;
+ }
+ .partners > h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    /* padding: 10px; */
+ } 
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #D3D3D3;
+    padding: 20px;
+    width: 100%;
+}
+footer > h3 i {
+    color: green;
+    font-size: 24px;
+}
+
 @media screen and (min-width: 768px) {
+
+    .hamburger {
+        display: none;  
+    }
+
+    .partners {
+        display: none;
+    }
 
     .home-nav > ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 12px;
         list-style-type: none;
         color: white;
         background-color: #272A31;
-        padding: 30px;
-        margin-top: 0;
-        padding-left: 120px;
+        padding: 20px;
+        padding-right: 130px;
+    }
+
+    .home-nav > ul > li > a {
+        text-decoration: none;
+        color: #D3D3D3;
     }
 
     .header {
@@ -36,7 +208,7 @@ body {
         justify-content: space-between;
         gap: 16px;
         list-style-type: none;
-        padding: 30px 124px 30px 124px;
+        padding: 0 124px 0 124px;
         text-align: center;
     }
 
@@ -64,37 +236,46 @@ body {
     .about-page {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        height: 100vh;
-        width: 100%;
+        gap: 26px;
         
     }
     
     .about-page-header {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         background: url('mooc-images/bkgrnd.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
-        padding: 0 144px 0 144px;
-        height: 90vh;
-
+        padding: 48px 144px 46px 144px;
+        height: 70vh;
     }
-    /*  */
-    .about-page-header > P {
+    .about-page-header > h2 {
+        display: none;
+    }
+
+
+    .para {
+        background: #eeee;
+        padding: 48px;
+        text-align: start;
+        border-radius: 2px;
+    }
+
+    .about-page p {
         text-align: center;
     }
 
     .about-page-main {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
     }
 
     
@@ -107,15 +288,26 @@ body {
     .about-logo {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        padding: 30px;
+        /* gap: 22px; */
         text-align: center;
+        border-bottom: 1px solid #D3D3D3;
+        padding-bottom: 34px;
+        width: 100%;
+        
+    }
+
+    .about-logo > h3 {
+        text-align: start;
+        font-size: 26px;
     }
     
-    .about-logo > h3 {
+    .about-logo > i {
+        border: 1px solid #D3D3D3;
         color: green;
         font-size: 48px;
+        padding: 40px;
     }
     
     .about-past {
@@ -124,28 +316,19 @@ body {
         justify-content: space-around;
         align-content: center;
         text-align: center;
-        padding-bottom: 64px;
      }
     
-     about-past h3{
+     .about-past > h3 {
          font-size: 24px;
          text-align: center;
     
      }
     
-     about-past p {
+     .about-past p {
         padding: 10px;
         border: 1px solid white;
      }
 
-
-     /* .about-page-header { */
-        /* display: grid; */
-        /* grid-template-columns: auto; */
-        /* justify-content: space-between; */
-        /* align-content: center; */
-        /* padding: 0 124px 0 124px; */
-    /* } */
     .about-header {
         display: grid;
         grid-template-columns: auto;
@@ -153,17 +336,11 @@ body {
         align-content: center;
         text-align: center;
     }
-    .about-past {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     
     .about-past > div {
         display: grid;
         grid-template-columns: auto auto;
-        justify-content: space-between;
+        justify-content: center;
         gap: 22px;
     }
 
@@ -171,7 +348,8 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: #D3D3D3;
+        background-color: #272A31;
+        color: #D3D3D3;
         padding: 20px;
         width: 100%;
     }

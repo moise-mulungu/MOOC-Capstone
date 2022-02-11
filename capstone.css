@@ -291,10 +291,6 @@ footer {
         display: none;
     }
 
-    /* .about-page > .partners { */
-        /* display: none; */
-    /* } */
-
     .head {
         display: flex;
         flex-direction: column;
