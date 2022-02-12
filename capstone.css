@@ -37,13 +37,15 @@ h1 {
     background-color: #d3d3d3;
   }
 
-  .main > a {
+  .main > p {
     display: none;
   }
 
   .menu-list > li > .box > a {
     font-size: 32px;
     text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #272a31;
   }
 
   .contacts > li {
@@ -223,7 +225,10 @@ h1 {
   }
 
   .him hr {
-    width: 20%;
+    width: 10%;
+    align-self: center;
+    border: 4px solid #ec5242;
+
   }
 
   .main-text p {
@@ -267,6 +272,7 @@ h1 {
   .partners > hr {
     width: 10%;
     align-self: flex-start;
+    border: 4px solid #ec5242;
   }
 
   .partners > h3 {
@@ -552,6 +558,8 @@ h1 {
 
   .him hr {
     width: 20%;
+    align-self: flex-start;
+    border: 1px solid #ec5242;
   }
 
   .partners {
@@ -564,8 +572,9 @@ h1 {
   }
 
   .partners > hr {
-    width: 10%;
+    width: 5%;
     align-self: center;
+    border: 2px solid #ec5242;
   }
 
   .partners > ul > li {

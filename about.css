@@ -41,6 +41,7 @@ body {
   font-size: 32px;
   text-decoration: none;
   font-family: "Lato", sans-serif;
+  color: #272a31;
 }
 
 .mobile-menu .cancel {
@@ -95,10 +96,10 @@ body {
 }
 
 .para {
-  background: #d3d3d3;
+  background: none;
   padding: 48px;
   text-align: start;
-  border-radius: 2px;
+  border: 2px solid #d3d3d3;
 }
 
 .about-page p {
@@ -155,7 +156,6 @@ footer > h3 i {
 
 .about-past p {
   padding: 10px;
-  border: 1px solid #d3d3d3;
 }
 
 .about-header {
@@ -198,6 +198,7 @@ footer > h3 i {
 .partners > hr {
   width: 10%;
   align-self: center;
+  border: 2px solid #ec5252;
 }
 
 .partners > ul > li {
@@ -322,7 +323,7 @@ footer {
   }
 
   .para {
-    background-color: #eeee;
+    background-color: rgba(211, 211, 211, 0.2);
     padding: 48px;
     text-align: start;
     border-radius: 2px;
