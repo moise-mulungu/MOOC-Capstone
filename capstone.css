@@ -264,7 +264,7 @@ a {
     justify-content: center;
     align-content: center;
     gap: 12px;
-    background-color: black;
+    background-color: #272a31;
   }
 
   .partners > hr {
@@ -565,6 +565,7 @@ a {
     align-content: center;
     gap: 12px;
     background-color: #272a31;
+    opacity: 0.9;
   }
 
   .partners > hr {
@@ -584,6 +585,7 @@ a {
     font-weight: bold;
     font-family: "Lato", sans-serif;
     color: #d3d3d3;
+    opacity: 0.6;
     text-align: center;
     padding: 10px;
   }

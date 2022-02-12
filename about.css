@@ -194,6 +194,7 @@ footer > h3 i {
   align-content: center;
   gap: 12px;
   background-color: #272a31;
+  opacity: 0.9;
   margin-bottom: 0;
   width: 100%;
 }
@@ -228,6 +229,7 @@ footer > h3 i {
   font-family: 'Lat', sans-serif;
   color: #d3d3d3;
   text-align: center;
+  opacity: 0.9;
 }
 
 footer {
