@@ -15,6 +15,17 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
 .header {
   display: none;
 }
@@ -104,6 +115,8 @@ body {
 
 .about-page p {
   text-align: center;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
 }
 
 .about-page-main {
@@ -155,6 +168,7 @@ footer > h3 i {
 }
 
 .about-past p {
+  font-family: "Lato", sans-serif;
   padding: 10px;
 }
 
