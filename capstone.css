@@ -1,10 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-@font-face {
-  font-family: 'cocogoose';
-  src: url(fonts/cocogoose-pro.regular.ttf);
-}
+/* @font-face { */
+  /* font-family: 'cocogoose'; */
+  /* src: url(fonts/cocogoose-pro.regular.ttf); */
+/* } */
 
 * {
   overflow-x: hidden;
@@ -15,12 +15,19 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+ h2, h3, p, a {
+   font-family: "Lato", sans-serif;
+ }
+
 @media screen and (max-width: 768px) {
   .mobile-menu {
     display: none;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -154,7 +161,7 @@ body {
     align-items: center;
     border-radius: 8px;
     padding: 30px 10px 30px 10px;
-    background-color: rgba(63, 63, 58, 0.3);
+    background-color: rgba(211, 211, 211, 0.2);
     border: 3px solid #272a32;
     color: #d3d3d3;
     gap: 20px;
@@ -176,7 +183,7 @@ body {
   }
 
   .forum:hover {
-    border: 3px solid #ec5242;
+    border: 3px solid green;
   }
 
   .join {
@@ -420,7 +427,7 @@ body {
     text-align: center;
     border-radius: 8px;
     padding: 30px 10px 30px 10px;
-    background-color: rgba(63, 63, 58, 0.3);
+    background-color: rgba(211, 211, 211, 0.2);
     border: 3px solid #272a32;
     color: #d3d3d3;
     gap: 20px;
@@ -452,7 +459,7 @@ body {
   }
 
   .forum:hover {
-    border: 3px solid #ec5242;
+    border: 3px solid green;
   }
 
   .partners > ul {
