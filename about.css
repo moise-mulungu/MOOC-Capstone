@@ -220,7 +220,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: none;
   width: 100%;
 }
 
