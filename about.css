@@ -1,0 +1,422 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@font-face {
+  font-family: 'cocogoose';
+  src: url(fonts/cocogoose-pro.regular.ttf);
+}
+
+* {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: none;
+}
+
+.home-nav ul {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 60vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #d3d3d3;
+}
+
+.menu-list > li > .box > a {
+  font-size: 32px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+}
+
+.mobile-menu .cancel {
+  text-align: end;
+  padding: 20px;
+  font-size: 32px;
+  margin-left: 400px;
+}
+
+.hamb {
+  background: url('mooc-images/bkgrnd.png');
+  padding: 24px 24px 10px 24px;
+}
+
+.hamburger {
+  font-size: 42px;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+}
+
+.about-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url('mooc-images/bkgrnd.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 48px 144px 46px 144px;
+  height: 70vh;
+}
+
+.title {
+  color: tomato;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 36px;
+}
+
+.title2 {
+  color: tomato;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 24px;
+  text-align: start;
+}
+
+.para {
+  background: none;
+  padding: 48px;
+  text-align: start;
+  border: 2px solid #d3d3d3;
+}
+
+.about-page p {
+  text-align: center;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+}
+
+.about-page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 34px;
+  width: 100%;
+}
+
+.about-logo > h3 {
+  text-align: start;
+  font-size: 26px;
+}
+
+footer > h3 i {
+  color: green;
+  font-size: 24px;
+}
+
+.about-logo > i {
+  border: 1px solid #d3d3d3;
+  color: green;
+  font-size: 48px;
+  padding: 40px;
+}
+
+.about-past {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+
+.about-past > h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-past p {
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+
+.about-header {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.about-past > div {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 22px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 12px;
+  background-color: #272a31;
+  opacity: 0.9;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.partners > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  color: #d3d3d3;
+  list-style-type: none;
+  gap: 8px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.partners > hr {
+  width: 10%;
+  align-self: center;
+  border: 1px solid #ec5252;
+}
+
+.partners > ul > li {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  opacity: 0.6;
+}
+
+.partners > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lat', sans-serif;
+  color: #d3d3d3;
+  text-align: center;
+  opacity: 0.9;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hamb {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .home-nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 12px;
+    list-style-type: none;
+    color: #d3d3d3;
+    background-color: #272a31;
+    padding: 20px;
+    padding-right: 130px;
+    margin: 0;
+  }
+
+  .header > a {
+    text-decoration: none;
+  }
+
+  .home-nav > ul > li > a {
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: url('mooc-images/bkgrnd.png');
+    gap: 16px;
+    list-style-type: none;
+    padding: 30px 124px 30px 124px;
+    text-align: center;
+  }
+
+  .header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 36px;
+    list-style-type: none;
+  }
+
+  .header > ul > li > a {
+    text-decoration: none;
+  }
+
+  footer > h3 i {
+    color: green;
+    font-size: 24px;
+  }
+
+  .about-logo > i {
+    border: 1px solid #d3d3d3;
+    color: green;
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  .header > a i {
+    color: green;
+    font-size: 36px;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .about-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url('mooc-images/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 48px 144px 46px 144px;
+    height: 70vh;
+  }
+
+  .about-page-header > h2 {
+    display: none;
+  }
+
+  .para {
+    background-color: rgba(211, 211, 211, 0.2);
+    padding: 48px;
+    text-align: start;
+    border-radius: 2px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .about-page p {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  .about-page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .title {
+    color: tomato;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 36px;
+  }
+
+  .about-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 34px;
+    width: 100%;
+  }
+
+  .about-logo > h3 {
+    text-align: start;
+    font-size: 26px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .about-past {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+  }
+
+  .about-past > h3 {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .about-header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .about-past > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding: 20px;
+    width: 100%;
+  }
+}
