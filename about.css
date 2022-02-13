@@ -38,7 +38,7 @@ a {
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -56,10 +56,10 @@ a {
 }
 
 .mobile-menu .cancel {
-  text-align: end;
+  align-self: flex-start;
   padding: 20px;
   font-size: 32px;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 .hamb {
@@ -97,6 +97,7 @@ a {
   color: tomato;
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 36px;
+  margin: 0;
 }
 
 .title2 {
@@ -414,6 +415,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: #272a31;
     color: #d3d3d3;
     padding: 20px;
